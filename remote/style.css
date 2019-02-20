@@ -41,7 +41,7 @@ nav {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 15px 15px 0;
 }
 .container .text-muted {
   margin: 15px 0;
@@ -110,7 +110,7 @@ code {
 }
 
 form.jsonform-hasrequired:after {
-  content: '* Required field';
+  content: '*표시는 필수 입력 항목입니다.';
   display: block;
   color: red;
   padding-top: 1em;

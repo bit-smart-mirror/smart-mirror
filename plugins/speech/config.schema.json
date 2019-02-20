@@ -2,11 +2,11 @@
     "schema": {
         "speech": {
             "type": "object",
-            "title": "Speech Settings",
+            "title": "말하기 설정",
             "properties": {
                 "device": {
                     "type": "string",
-                    "title": "Select <em><strong>Recording</strong></em> Device",
+                    "title": "녹음 장치 선택",
                     "required": true,
                     "default": "default",
                     "enum": [
@@ -15,13 +15,13 @@
                 },
                 "keyFilename": {
                     "type": "string",
-                    "title": "Google Cloud Speech Keyfile",
+                    "title": "Google Cloud Speech 키 파일",
                     "required": true,
                     "default": "keyfile.json"
                 },
                 "hotwords": {
                     "type": "array",
-                    "title": "Keyword Spotter Hotwords",
+                    "title": "키워드 감지 핫워드",
                     "required": true,
                     "items": {
                         "title": "keyword {{idx}}",
@@ -34,7 +34,7 @@
                             },
                             "model": {
                                 "type": "string",
-                                "title": "Model Filename",
+                                "title": "키워드 파일이름(기본 : smart_mirror.umdl)",
                                 "required": true
                             }
                         }
@@ -42,7 +42,7 @@
                 },
                 "sensitivity": {
                     "type": "number",
-                    "title": "Microphone Sensitivity",
+                    "title": "마이크 민감도",
                     "default": 0.5,
                     "minimum": 0,
                     "maximum": 1,
@@ -54,14 +54,10 @@
     "form": [
         {
             "type": "fieldset",
-            "title": "Speech Settings",
+            "title": "말하기 설정",
             "expandable": false,
             "order": -75,
             "items": [
-                {
-                    "type": "help",
-                    "helpvalue": "<p>For help please refer to <a href='https://docs.smart-mirror.io'>the docs.</a></BR>Also, we're available on <a href='https://discord.gg/EMb4ynW'>Discord Chat with <img src='https://discordapp.com/api/guilds/258802311298547713/widget.png' alt='people online'/></a> to help assist you in real time.</p>"
-                },
                 {
                     "key":"speech.device",
                     "titleMap": {
@@ -71,7 +67,7 @@
                 "speech.keyFilename",
                 {
                     "type": "tabarray",
-                    "title": "Keyword Spotter Hotwords",
+                    "title": "키워드 감지 핫워드",
                     "items": [
                         {
                             "type": "section",
@@ -80,7 +76,7 @@
                                 {
                                     "key": "speech.hotwords[].keyword",
                                     "valueInLegend": true,
-                                    "title": "Keyword Name"
+                                    "title": "키워드 이름"
                                 },
                                 "speech.hotwords[].model"
                             ]
@@ -91,7 +87,7 @@
                     "type": "range",
                     "step": 0.1,
                     "key": "speech.sensitivity",
-                    "description":"<p id='sensitivityHelper'>Move above bar to see value here.</p>"
+                    "description":"<p id='sensitivityHelper'>막대를 움직여서 민감도를 설정하세요.</p>"
                 }
             ]
         }

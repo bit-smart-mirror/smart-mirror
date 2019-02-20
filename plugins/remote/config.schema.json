@@ -2,17 +2,17 @@
     "schema": {
         "remote": {
             "type": "object",
-            "title": "Remote Server Settings",
+            "title": "이미지 서버 설정",
             "properties": {
                 "enabled": {
                     "default": true,
                     "type": "boolean",
-                    "title": "Remote Server Enabled"
+                    "title": "이미지 서버 사용여부(사용시 체크해주세요.)"
                 },
                 "port": {
                     "default": 8080,
                     "type": "integer",
-                    "title": "Remote Server Port",
+                    "title": "이미지 서버 포트번호(기본값 : 8080)",
                     "required": true
                 }
             }

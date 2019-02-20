@@ -2,30 +2,26 @@
     "schema": {
         "geoPosition": {
             "type": "object",
-            "title": "Geo-Position",
+            "title": "좌표",
             "properties": {
                 "latitude": {
                     "type": "string",
-                    "title": "latitude"
+                    "title": "위도"
                 },
                 "longitude": {
                     "type": "string",
-                    "title": "longitude"
+                    "title": "경도"
                 }
             }
         }
     },
     "form":[
         {
-          "title": "Geo-Position Settings",
+          "title": "위치 설정",
           "type":"fieldset",
           "expandable":true,
           "order":0,
           "items":[
-            {
-              "type":"help",
-              "helpvalue": "<strong><em>(used if Geo-Position is not accurately being detected)</em></strong></br><a href=\"https://docs.smart-mirror.io/docs/configure_the_mirror.html#geolocation\" target=\"_blank\">Click here for more info</a></br>"
-            },
             "geoPosition.latitude",
             "geoPosition.longitude"
           ]

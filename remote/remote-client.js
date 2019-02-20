@@ -79,7 +79,7 @@ $(function () {
 	// global socket events
 	socket.on('connected', function () {
 		$connectionBar.removeClass('disconnected').addClass('connected')
-		$connectionText.html('Connected!')
+		$connectionText.html('연결 되었습니다.')
 		$.get('nav.html', function (data) {
 			$navBar.html(data)
 		})
@@ -134,7 +134,7 @@ $(function () {
 	socket.on('json', function (data) {
 		data.configJSON.value = $.extend({}, data.configDefault, data.config)
 		console.log(data);
-		data.configJSON.form.push({ "type": "submit", "title": "Submit", "order": 10000 })
+		data.configJSON.form.push({ "type": "submit", "title": "설정 적용", "order": 10000 })
 		console.log(data);
 
 		try {
@@ -259,7 +259,6 @@ $(function () {
 		}, timeOutMillis)
 	}
 
-
-
+	console.log("start web server");
 
 })

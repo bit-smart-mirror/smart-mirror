@@ -2,15 +2,15 @@
     "schema": {
         "traffic": {
             "type": "object",
-            "title": "Traffic Settings",
+            "title": "교통 설정",
             "properties": {
                 "key": {
                     "type": "string",
-                    "title": "Bing Traffic API Key"
+                    "title": "Bing 교통 API 키"
                 },
                 "refreshInterval": {
                     "type": "string",
-                    "title": "Refresh Traffic Interval (minutes)"
+                    "title": "교통상황 새로고침 주기 (분)"
                 },
                 "trips": {
                     "type": "array",
@@ -57,7 +57,7 @@
     "form":[
       {
         "type":"fieldset",
-        "title":"Traffic Settings",
+        "title":"교통 설정",
         "expandable":true,
         "order":0,
         "items": [

@@ -2,22 +2,24 @@
     "schema": {
         "forecast": {
             "type": "object",
-            "title": "Weather Settings",
+            "title": "날씨 설정",
             "properties": {
                 "key": {
                     "type": "string",
-                    "title": "API Key",
-                    "description": "(see <a href='http://darksky.net'>darksky.net</a> documentation to obtain the API Key)"
+                    "title": "API 키",
+                    "description": "(<a href='http://darksky.net'>darksky.net</a> 에 가입하신 다음 API키를 발급해서 넣어주세요.)"
                 },
                 "units": {
                     "type": "string",
-                    "title": "Units",
-                    "description": "(see <a href='http://darksky.net'>darksky.net</a> documentation if you're getting the wrong units)",
+                    "title": "유닛",
+                    "description":[
+                        "<p>(<a href='https://darksky.net/dev/docs'>darksky.net의 API키 문서</a>를 참고한 다음 unit 조건 반환 종류를 확인해주시고 설정해주세요.)</p><p>(기본값 : auto)</p>"
+                    ],
                     "default": "auto"
                 },
                 "refreshInterval": {
                     "type": "integer",
-                    "title": "Refresh Interval (minutes)",
+                    "title": "새로고침 주기(분)",
                     "default": 2
                 }
             }
