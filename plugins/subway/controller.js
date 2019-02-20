@@ -29,6 +29,7 @@ function SubwayService($scope, SpeechService, Focus) {
 			$scope.subwayinfo1 = station+"역에서 "+Service.arriveTime.realtimeArrivalList[0].updnLine+"방향인 "+Service.arriveTime.realtimeArrivalList[0].bstatnNm + "행 열차가 " + changemin(Service.arriveTime.realtimeArrivalList[0].barvlDt) + " 후 도착예정입니다.";
 			$scope.subwayinfo2 = station+"역에서 "+Service.arriveTime.realtimeArrivalList[1].updnLine+"방향인 "+Service.arriveTime.realtimeArrivalList[1].bstatnNm + "행 열차가 " + changemin(Service.arriveTime.realtimeArrivalList[1].barvlDt) + " 후 도착예정입니다.";
 			$scope.subwayinfo3 = station+"역에서 "+Service.arriveTime.realtimeArrivalList[2].updnLine+"방향인 "+Service.arriveTime.realtimeArrivalList[2].bstatnNm + "행 열차가 " + changemin(Service.arriveTime.realtimeArrivalList[2].barvlDt) + " 후 도착예정입니다.";
+			$scope.subwayinfo4 = station+"역에서 "+Service.arriveTime.realtimeArrivalList[3].updnLine+"방향인 "+Service.arriveTime.realtimeArrivalList[3].bstatnNm + "행 열차가 " + changemin(Service.arriveTime.realtimeArrivalList[3].barvlDt) + " 후 도착예정입니다.";
 		}
 		Focus.change("subway");
 	});
